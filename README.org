@@ -1,0 +1,22 @@
+#+TITLE: Cryptokasten: Create from template (Environment)
+#+TAGS: cryptokasten
+#+PROPERTY: header-args :session *shell cryptokasten-create-from-template-environment* :results silent raw
+#+OPTIONS: ^:nil
+
+[[https://github.com/cryptokasten][file:https://img.shields.io/badge/dynamic/json.svg?url=https://api.github.com/users/cryptokasten&label=Cryptokasten&query=$.public_repos]]
+
+** Environment description
+
+- Base docker image: [[https://github.com/cryptokasten/python-in-docker][python:3.9.0-buster]]
+
+** Python requirements
+
+#+BEGIN_SRC config :tangle requirements.txt
+Jinja2==2.11.2
+#+END_SRC
+
+** Run
+
+#+BEGIN_SRC sh
+docker run --rm -it cryptokasten-create-from-template-environment bash
+#+END_SRC
