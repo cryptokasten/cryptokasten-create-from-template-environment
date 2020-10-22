@@ -13,6 +13,7 @@
 
 #+BEGIN_SRC config :tangle requirements.txt
 Jinja2==2.11.2
+pyyaml==5.3.1
 #+END_SRC
 
 ** Run
