@@ -16,8 +16,8 @@ Jinja2==2.11.2
 pyyaml==5.3.1
 #+END_SRC
 
-** Run
+** Pull image
 
 #+BEGIN_SRC sh
-docker run --rm -it cryptokasten-create-from-template-environment bash
+docker pull cryptokasten/cryptokasten-create-from-template-environment
 #+END_SRC
